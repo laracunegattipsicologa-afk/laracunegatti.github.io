@@ -9,8 +9,6 @@
 
 <meta name="description" content="Psicoterapia a Trieste e online. Percorsi per ansia, blocchi emotivi e difficoltà relazionali.">
 
-<meta name="keywords" content="psicoterapeuta Trieste, psicologo Trieste, psicoterapia Trieste">
-
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
@@ -21,11 +19,28 @@ body{
   color:#2f3b33;
 }
 
-/* HERO PIÙ CALDO */
+/* HERO CON IMMAGINE */
 .hero{
+  position:relative;
   text-align:center;
-  padding:140px 20px 100px;
-  background:linear-gradient(180deg, #eadfce 0%, #f7f2ea 100%);
+  padding:160px 20px;
+  background:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color:white;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  top:0; left:0;
+  width:100%; height:100%;
+  background:rgba(30,40,35,0.55);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+  margin:auto;
 }
 
 .hero h1{
@@ -37,25 +52,36 @@ body{
 .hero p{
   margin-top:15px;
   font-size:18px;
-  opacity:0.8;
 }
 
-/* CONTENUTO */
+/* SEZIONE */
 .section{
-  max-width:820px;
+  max-width:900px;
   margin:auto;
-  padding:60px 20px;
+  padding:70px 20px;
 }
 
-/* BLOCCO */
-.block{
-  margin-bottom:50px;
+/* CARD */
+.card{
+  background:white;
+  border-radius:18px;
+  padding:30px;
+  margin-bottom:25px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.06);
 }
 
+/* IMMAGINI */
+.img{
+  width:100%;
+  border-radius:14px;
+  margin-top:15px;
+}
+
+/* TITOLI */
 h2{
   font-family:'Playfair Display', serif;
-  font-size:28px;
   color:#4f6f5d;
+  font-size:28px;
   margin-bottom:10px;
 }
 
@@ -64,20 +90,12 @@ p{
   line-height:1.9;
 }
 
-/* DIVISORE ELEGANTE */
-.divider{
-  height:1px;
-  background:rgba(0,0,0,0.08);
-  margin:40px 0;
-}
-
-/* BOTTONI CENTRATI (IMPORTANTE) */
+/* BOTTONI */
 .cta{
   text-align:center;
-  margin-top:30px;
+  margin-top:25px;
 }
 
-/* BOTTONI PIÙ “DESIGN” */
 .button{
   display:inline-block;
   margin:8px;
@@ -86,24 +104,11 @@ p{
   padding:13px 20px;
   border-radius:12px;
   text-decoration:none;
-  font-weight:500;
-  transition:0.3s;
-  box-shadow:0 6px 18px rgba(0,0,0,0.08);
 }
 
-.button:hover{
-  background:#5e7a6a;
-  transform:translateY(-2px);
-}
-
-/* VARIANTE PIÙ ELEGANTE (CONTATTI) */
 .button.secondary{
   background:#c9b8a4;
   color:#2f3b33;
-}
-
-.button.secondary:hover{
-  background:#b9a68f;
 }
 </style>
 
@@ -112,57 +117,65 @@ p{
 <body>
 
 <div class="hero">
-  <h1>Dott.ssa Lara Cunegatti</h1>
-  <p>Psicoterapeuta a Trieste e online<br>Uno spazio accogliente per ritrovare equilibrio e chiarezza</p>
+  <div class="hero-content">
+    <h1>Dott.ssa Lara Cunegatti</h1>
+    <p>Psicoterapeuta a Trieste e online<br>Uno spazio sicuro per ritrovare equilibrio interiore</p>
+  </div>
 </div>
 
 <div class="section">
 
-  <div class="block">
+  <div class="card">
     <h2>Uno spazio per te</h2>
     <p>
-      Se sei qui, probabilmente stai attraversando un momento in cui qualcosa dentro di te chiede attenzione.
-      Non serve arrivare a un punto di rottura per iniziare un percorso.
+      A volte non serve una crisi evidente per iniziare un percorso.
+      Basta sentire che qualcosa dentro di sé sta cambiando.
     </p>
+
+    <img class="img" src="https://images.unsplash.com/photo-1529693662653-9d480530a697?auto=format&fit=crop&w=1400&q=80">
   </div>
 
-  <div class="divider"></div>
-
-  <div class="block">
+  <div class="card">
     <h2>Il mio lavoro</h2>
     <p>
       Offro percorsi di psicoterapia per adulti e giovani adulti,
       in presenza nel centro di :contentReference[oaicite:0]{index=0} e online.
     </p>
+
+    <img class="img" src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1400&q=80">
   </div>
 
-  <div class="divider"></div>
-
-  <div class="block">
+  <div class="card">
     <h2>Il mio approccio</h2>
     <p>
-      Integro Psicoterapia della Gestalt ed EMDR, con un lavoro centrato sulla persona e sulla relazione terapeutica.
+      Integro Psicoterapia della Gestalt ed EMDR,
+      con attenzione alla relazione e al ritmo della persona.
     </p>
+
+    <img class="img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80">
   </div>
 
-  <div class="divider"></div>
+  <div class="card">
+    <h2>Studio a Trieste</h2>
+    <p>
+      Uno spazio accogliente e riservato nel centro di Trieste e online.
+    </p>
 
-  <div class="block">
+    <img class="img" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80">
+  </div>
+
+  <div class="card">
     <h2>Contatto</h2>
 
     <p style="text-align:center;">
-      Se senti che è il momento di iniziare, puoi scrivermi.
+      Se senti che è il momento, puoi scrivermi senza impegno.
     </p>
 
     <div class="cta">
-      <a class="button" href="https://wa.me/393792524647?text=Buongiorno%20Dottoressa,%20vorrei%20avere%20informazioni">
-        WhatsApp
-      </a>
-
+      <a class="button" href="https://wa.me/393792524647">WhatsApp</a>
       <a class="button secondary" href="chisono.html">Chi sono</a>
       <a class="button secondary" href="contatti.html">Contatti</a>
     </div>
-
   </div>
 
 </div>
