@@ -9,64 +9,81 @@
 
 <meta name="description" content="Psicoterapia a Trieste e online. Percorsi per ansia, blocchi emotivi e difficoltà relazionali.">
 
-<meta name="keywords" content="psicoterapeuta Trieste, psicologo Trieste, psicoterapia Trieste, psicoterapia online, ansia Trieste, terapia blocchi emotivi, psicoterapeuta centro Trieste">
+<meta name="keywords" content="psicoterapeuta Trieste, psicologo Trieste, psicoterapia Trieste, psicoterapia online, ansia Trieste, terapia blocchi emotivi">
 
 <style>
 body{
   margin:0;
-  font-family: Arial, sans-serif;
-  background:#f4f1ea;
+  font-family: 'Arial', sans-serif;
+  background:#f6f3ee;
   color:#2f3b33;
-  line-height:1.8;
 }
 
-header{
-  background: linear-gradient(135deg, #dfe8e1, #f4f1ea);
-  padding:110px 20px;
+/* HERO */
+.hero{
+  background: linear-gradient(135deg, #dfe8e1, #f6f3ee);
+  padding:120px 20px;
   text-align:center;
 }
 
-h1{
-  font-size:40px;
+.hero h1{
+  font-size:42px;
   margin:0;
+  letter-spacing:0.5px;
 }
 
-.subtitle{
+.hero p{
   font-size:18px;
-  margin-top:10px;
-  opacity:0.8;
+  margin-top:15px;
+  opacity:0.85;
 }
 
+/* CONTAINER */
 .container{
   max-width:900px;
   margin:auto;
-  padding:50px 20px;
+  padding:60px 20px;
 }
 
-.box{
+/* CARD */
+.card{
   background:white;
-  padding:25px;
-  border-radius:14px;
-  margin-bottom:20px;
-  box-shadow:0 4px 18px rgba(0,0,0,0.05);
+  padding:30px;
+  border-radius:16px;
+  margin-bottom:25px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.06);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-3px);
 }
 
 h2{
   color:#4f6f5d;
+  margin-bottom:10px;
 }
 
+/* BUTTON */
 .button{
   display:inline-block;
   margin-top:15px;
   background:#7da893;
   color:white;
-  padding:12px 20px;
+  padding:12px 18px;
   text-decoration:none;
-  border-radius:8px;
+  border-radius:10px;
+  transition:0.3s;
 }
 
 .button:hover{
   background:#658a77;
+}
+
+/* SMALL TEXT */
+.small{
+  font-size:15px;
+  opacity:0.85;
 }
 </style>
 
@@ -74,71 +91,62 @@ h2{
 
 <body>
 
-<header>
+<div class="hero">
   <h1>Dott.ssa Lara Cunegatti</h1>
-  <div class="subtitle">Psicoterapeuta a Trieste e online</div>
-</header>
+  <p>Psicoterapeuta a Trieste e online<br>Uno spazio sicuro per ritrovare equilibrio e chiarezza interiore</p>
+</div>
 
 <div class="container">
 
-  <div class="box">
+  <div class="card">
     <h2>Uno spazio per te</h2>
     <p>
-      Se sei qui, probabilmente qualcosa dentro di te sta chiedendo attenzione.
-      Non serve stare male “abbastanza” per iniziare un percorso.
-      A volte basta sentire che qualcosa nella propria vita non rispecchia più ciò che si è.
+      Se sei arrivato/a qui, forse stai attraversando un momento in cui qualcosa dentro di te chiede attenzione.
+      Non serve “stare male abbastanza” per iniziare un percorso.
+      A volte basta sentire che qualcosa non ti rappresenta più.
     </p>
   </div>
 
-  <div class="box">
+  <div class="card">
     <h2>Il mio lavoro</h2>
     <p>
       Offro percorsi di psicoterapia per adulti e giovani adulti,
-      sia in presenza nel mio studio nel centro di Trieste che online.
+      sia in presenza nel centro di Trieste che online.
     </p>
 
-    <p>
-      Lavoro con ansia, blocchi emotivi, difficoltà relazionali e momenti di cambiamento personale.
+    <p class="small">
+      Lavoro su ansia, blocchi emotivi, difficoltà relazionali e momenti di cambiamento personale.
     </p>
   </div>
 
-  <div class="box">
-    <h2>Approccio terapeutico</h2>
+  <div class="card">
+    <h2>Il mio approccio</h2>
     <p>
       Integro Psicoterapia della Gestalt ed EMDR,
-      con un lavoro centrato sulla persona, sulla relazione e sull’ascolto profondo della storia individuale.
+      con un approccio centrato sulla persona, sulla relazione e sul rispetto dei tuoi tempi.
     </p>
   </div>
 
-  <div class="box">
+  <div class="card">
     <h2>Studio a Trieste</h2>
     <p>
-      Ricevo nel mio studio nel centro di Trieste, in un ambiente accogliente e riservato,
-      facilmente raggiungibile anche con i mezzi.
+      Ricevo in uno studio accogliente nel centro di :contentReference[oaicite:0]{index=0} e online.
     </p>
   </div>
 
-  <div class="box">
+  <div class="card">
     <h2>Contatto</h2>
 
     <p>
       Se senti che è il momento di iniziare un percorso, puoi scrivermi senza impegno.
-      Ti risponderò personalmente.
     </p>
 
     <a class="button" href="https://wa.me/393792524647?text=Buongiorno%20Dottoressa,%20vorrei%20avere%20informazioni">
       Scrivimi su WhatsApp
     </a>
 
-    <br><br>
-
-    <a class="button" href="chisono.html">
-      Chi sono
-    </a>
-
-    <a class="button" href="contatti.html">
-      Contatti
-    </a>
+    <a class="button" href="chisono.html">Chi sono</a>
+    <a class="button" href="contatti.html">Contatti</a>
 
   </div>
 
