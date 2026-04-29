@@ -20,11 +20,11 @@ body{
   color:#2f3b33;
 }
 
-/* HERO STRONG + MARE */
+/* HERO MARE */
 .hero{
   position:relative;
   text-align:center;
-  padding:170px 20px;
+  padding:160px 20px;
   color:white;
   background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
 }
@@ -41,6 +41,17 @@ body{
   z-index:2;
   max-width:750px;
   margin:auto;
+}
+
+/* FOTO PROFILO */
+.hero img{
+  width:140px;
+  height:140px;
+  border-radius:50%;
+  object-fit:cover;
+  margin-bottom:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  border:3px solid rgba(255,255,255,0.6);
 }
 
 .hero h1{
@@ -62,7 +73,7 @@ body{
   padding:80px 20px;
 }
 
-/* BLOCCO PREMIUM */
+/* BLOCCHI */
 .block{
   background:white;
   padding:35px;
@@ -85,15 +96,15 @@ p{
   line-height:1.95;
 }
 
-/* CTA AREA FORTE */
-.cta-box{
+/* CTA */
+.cta{
   text-align:center;
-  padding:20px 0;
+  margin-top:30px;
 }
 
 .button{
   display:inline-block;
-  margin:10px;
+  margin:8px;
   padding:14px 24px;
   border-radius:12px;
   text-decoration:none;
@@ -113,12 +124,8 @@ p{
   color:#2f3b33;
 }
 
-/* BLOCCO FINALE PIÙ FORTE */
-.final-note{
-  text-align:center;
-  font-size:16px;
-  opacity:0.8;
-  margin-top:10px;
+.button.secondary:hover{
+  background:#bda78f;
 }
 
 </style>
@@ -130,57 +137,61 @@ p{
 <!-- HERO -->
 <div class="hero">
   <div class="hero-content">
+
+    <!-- FOTO CORRETTA -->
+    <img src="larafoto.jpg" alt="Dott.ssa Lara Cunegatti">
+
     <h1>Dott.ssa Lara Cunegatti</h1>
-    <p>Psicoterapeuta a Trieste e online<br>Uno spazio sicuro dove ritrovare equilibrio e chiarezza interiore</p>
+    <p>Psicoterapeuta a Trieste e online<br>Uno spazio sicuro dove ritrovare equilibrio interiore</p>
+
   </div>
 </div>
 
 <div class="section">
 
-  <!-- APERTURA EMOTIVA -->
   <div class="block">
     <h2>Uno spazio per te</h2>
     <p>
-      A volte non è necessario stare “male abbastanza” per iniziare un percorso.
-      È sufficiente sentire che qualcosa dentro di sé sta cambiando e chiede attenzione.
+      A volte non serve arrivare a una crisi per iniziare un percorso.
+      Basta sentire che qualcosa dentro di sé sta cambiando e chiede attenzione.
     </p>
   </div>
 
-  <!-- COSA OFFRI -->
   <div class="block">
     <h2>Il mio lavoro</h2>
     <p>
       Offro percorsi di psicoterapia per adulti e giovani adulti, in presenza nel centro di :contentReference[oaicite:0]{index=0} e online.
     </p>
+
     <p>
-      Lavoriamo insieme su ansia, blocchi emotivi, difficoltà relazionali e momenti di cambiamento personale.
+      Mi occupo di ansia, blocchi emotivi, difficoltà relazionali e momenti di cambiamento personale.
     </p>
   </div>
 
-  <!-- APPROCCIO -->
   <div class="block">
     <h2>Il mio approccio</h2>
     <p>
-      Integro Psicoterapia della Gestalt ed EMDR.
-      Il lavoro terapeutico si basa sulla relazione, sull’ascolto e sul rispetto dei tempi individuali.
+      Integro Psicoterapia della Gestalt ed EMDR, con attenzione alla relazione e al ritmo della persona.
     </p>
   </div>
 
-  <!-- STUDIO -->
   <div class="block">
-    <h2>Lo studio</h2>
+    <h2>Studio a Trieste</h2>
     <p>
-      Ricevo in uno spazio riservato e accogliente nel centro di Trieste e online.
+      Ricevo in uno spazio accogliente e riservato nel centro di Trieste e online.
     </p>
   </div>
 
-  <!-- CTA FORTE -->
   <div class="block">
-    <h2>Iniziamo</h2>
+    <h2>Contatto</h2>
 
-    <div class="cta-box">
+    <p style="text-align:center;">
+      Se senti che è il momento di iniziare, puoi scrivermi senza impegno.
+    </p>
+
+    <div class="cta">
       <a class="button" href="https://wa.me/393792524647">
-        Contattami su WhatsApp
+        WhatsApp
       </a>
 
       <a class="button secondary" href="chisono.html">
@@ -190,10 +201,6 @@ p{
       <a class="button secondary" href="contatti.html">
         Contatti
       </a>
-    </div>
-
-    <div class="final-note">
-      Il primo passo può essere semplice. Anche solo un messaggio.
     </div>
 
   </div>
