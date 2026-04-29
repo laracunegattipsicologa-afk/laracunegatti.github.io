@@ -13,52 +13,55 @@
 body{
   margin:0;
   font-family:'Inter', sans-serif;
-  background:#f7f2ea;
   color:#2f3b33;
+  background:#f7f2ea;
 }
 
-/* HERO CON FOTO */
+/* HERO MARE (CALMO) */
 .hero{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
+  position:relative;
   text-align:center;
-  padding:120px 20px;
-  background:linear-gradient(180deg,#e9dfcf,#f7f2ea);
+  padding:160px 20px;
+  color:white;
+  background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
 }
 
-.hero img{
-  width:140px;
-  height:140px;
-  border-radius:50%;
-  object-fit:cover;
-  margin-bottom:20px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+.hero::after{
+  content:"";
+  position:absolute;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(30,40,35,0.55);
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:700px;
+  margin:auto;
 }
 
 .hero h1{
   font-family:'Playfair Display', serif;
-  font-size:48px;
+  font-size:52px;
   margin:0;
 }
 
 .hero p{
-  margin-top:12px;
+  margin-top:15px;
   font-size:18px;
-  opacity:0.8;
-  max-width:600px;
+  opacity:0.9;
 }
 
-/* SEZIONI */
+/* SEZIONE */
 .section{
   max-width:900px;
   margin:auto;
-  padding:60px 20px;
+  padding:70px 20px;
 }
 
-/* BLOCCO */
-.block{
+/* CARD */
+.card{
   background:white;
   padding:30px;
   border-radius:18px;
@@ -69,8 +72,8 @@ body{
 /* TITOLI */
 h2{
   font-family:'Playfair Display', serif;
-  font-size:28px;
   color:#4f6f5d;
+  font-size:28px;
 }
 
 /* TESTO */
@@ -79,14 +82,14 @@ p{
   line-height:1.9;
 }
 
-/* IMMAGINI AMBIENTE */
+/* IMMAGINI NATURA */
 .img{
   width:100%;
   border-radius:14px;
   margin-top:15px;
 }
 
-/* BOTTONI */
+/* CTA */
 .cta{
   text-align:center;
   margin-top:20px;
@@ -95,12 +98,11 @@ p{
 .button{
   display:inline-block;
   margin:8px;
+  background:#6f8f7d;
+  color:white;
   padding:13px 20px;
   border-radius:12px;
   text-decoration:none;
-  background:#6f8f7d;
-  color:white;
-  font-weight:500;
 }
 
 .button.secondary{
@@ -114,54 +116,57 @@ p{
 <body>
 
 <div class="hero">
-
-  <!-- 🔴 QUI METTI LA TUA FOTO -->
-  <img src="larafoto.jpg" alt="Dott.ssa Lara Cunegatti">
-
-  <h1>Dott.ssa Lara Cunegatti</h1>
-  <p>Psicoterapeuta a Trieste e online<br>Uno spazio sicuro per ritrovare equilibrio e chiarezza interiore</p>
-
+  <div class="hero-content">
+    <h1>Dott.ssa Lara Cunegatti</h1>
+    <p>Psicoterapeuta a Trieste e online<br>Uno spazio calmo dove ritrovare equilibrio interiore</p>
+  </div>
 </div>
 
 <div class="section">
 
-  <div class="block">
+  <div class="card">
     <h2>Uno spazio per te</h2>
     <p>
-      A volte non serve arrivare a un punto di crisi per iniziare un percorso.
-      Basta sentire che qualcosa dentro di sé sta cambiando e chiede attenzione.
+      A volte serve uno spazio in cui poter rallentare e ascoltarsi.
+      Non serve avere tutto chiaro: basta iniziare a sentire cosa sta accadendo dentro di sé.
     </p>
+
+    <img class="img" src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=1400&q=80">
   </div>
 
-  <div class="block">
+  <div class="card">
     <h2>Il mio lavoro</h2>
     <p>
       Offro percorsi di psicoterapia per adulti e giovani adulti,
       in presenza nel centro di :contentReference[oaicite:0]{index=0} e online.
     </p>
-    <img class="img" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=80">
+
+    <img class="img" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80">
   </div>
 
-  <div class="block">
+  <div class="card">
     <h2>Il mio approccio</h2>
     <p>
-      Integro Psicoterapia della Gestalt ed EMDR, con attenzione alla relazione e al ritmo della persona.
+      Integro Psicoterapia della Gestalt ed EMDR, con attenzione alla relazione e ai tempi della persona.
     </p>
+
+    <img class="img" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80">
   </div>
 
-  <div class="block">
+  <div class="card">
     <h2>Studio a Trieste</h2>
     <p>
-      Ricevo in uno spazio accogliente e riservato nel centro di Trieste e online.
+      Uno spazio accogliente e riservato nel centro di Trieste e online.
     </p>
-    <img class="img" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&q=80">
+
+    <img class="img" src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1400&q=80">
   </div>
 
-  <div class="block">
+  <div class="card">
     <h2>Contatto</h2>
 
     <p style="text-align:center;">
-      Se senti che è il momento di iniziare, puoi scrivermi.
+      Se senti che è il momento, puoi scrivermi.
     </p>
 
     <div class="cta">
