@@ -20,92 +20,92 @@ body{
   color:#2f3b33;
 }
 
-/* HERO MARE */
+/* HERO STRONG + MARE */
 .hero{
   position:relative;
   text-align:center;
-  padding:160px 20px;
+  padding:170px 20px;
   color:white;
-  background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  background:url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
 }
 
 .hero::after{
   content:"";
   position:absolute;
-  top:0;left:0;
-  width:100%;height:100%;
-  background:rgba(25,35,30,0.55);
+  inset:0;
+  background:rgba(20,30,25,0.55);
 }
 
 .hero-content{
   position:relative;
   z-index:2;
-  max-width:700px;
+  max-width:750px;
   margin:auto;
 }
 
 .hero h1{
   font-family:'Playfair Display', serif;
-  font-size:54px;
+  font-size:56px;
   margin:0;
 }
 
 .hero p{
   margin-top:15px;
-  font-size:18px;
-  opacity:0.9;
+  font-size:19px;
+  opacity:0.95;
 }
 
-/* SEZIONE */
+/* SEZIONI */
 .section{
-  max-width:850px;
+  max-width:900px;
   margin:auto;
-  padding:70px 20px;
+  padding:80px 20px;
 }
 
-/* BLOCCHI */
+/* BLOCCO PREMIUM */
 .block{
-  background:rgba(255,255,255,0.9);
-  backdrop-filter: blur(2px);
-  padding:30px;
-  border-radius:18px;
-  margin-bottom:25px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.05);
+  background:white;
+  padding:35px;
+  border-radius:20px;
+  margin-bottom:28px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.06);
 }
 
 /* TITOLI */
 h2{
   font-family:'Playfair Display', serif;
-  font-size:30px;
+  font-size:32px;
   color:#4f6f5d;
+  margin-bottom:10px;
 }
 
 /* TESTO */
 p{
-  font-size:17px;
+  font-size:17.5px;
   line-height:1.95;
 }
 
-/* BOTTONI */
-.cta{
+/* CTA AREA FORTE */
+.cta-box{
   text-align:center;
-  margin-top:25px;
+  padding:20px 0;
 }
 
 .button{
   display:inline-block;
-  margin:8px;
-  padding:13px 22px;
+  margin:10px;
+  padding:14px 24px;
   border-radius:12px;
   text-decoration:none;
+  font-weight:500;
   background:#6f8f7d;
   color:white;
-  font-weight:500;
   transition:0.3s;
 }
 
 .button:hover{
   background:#5f7d6c;
+  transform:translateY(-2px);
 }
 
 .button.secondary{
@@ -113,65 +113,87 @@ p{
   color:#2f3b33;
 }
 
-/* SEPARAZIONE NATURALE */
-.spacer{
-  height:60px;
+/* BLOCCO FINALE PIÙ FORTE */
+.final-note{
+  text-align:center;
+  font-size:16px;
+  opacity:0.8;
+  margin-top:10px;
 }
+
 </style>
 
 </head>
 
 <body>
 
+<!-- HERO -->
 <div class="hero">
   <div class="hero-content">
     <h1>Dott.ssa Lara Cunegatti</h1>
-    <p>Psicoterapeuta a Trieste e online<br>Uno spazio calmo dove ritrovare equilibrio interiore</p>
+    <p>Psicoterapeuta a Trieste e online<br>Uno spazio sicuro dove ritrovare equilibrio e chiarezza interiore</p>
   </div>
 </div>
 
 <div class="section">
 
+  <!-- APERTURA EMOTIVA -->
   <div class="block">
     <h2>Uno spazio per te</h2>
     <p>
-      A volte serve uno spazio in cui poter rallentare, respirare e ascoltarsi.
-      Non serve avere tutto chiaro per iniziare un percorso.
+      A volte non è necessario stare “male abbastanza” per iniziare un percorso.
+      È sufficiente sentire che qualcosa dentro di sé sta cambiando e chiede attenzione.
     </p>
   </div>
 
+  <!-- COSA OFFRI -->
   <div class="block">
     <h2>Il mio lavoro</h2>
     <p>
       Offro percorsi di psicoterapia per adulti e giovani adulti, in presenza nel centro di :contentReference[oaicite:0]{index=0} e online.
     </p>
+    <p>
+      Lavoriamo insieme su ansia, blocchi emotivi, difficoltà relazionali e momenti di cambiamento personale.
+    </p>
   </div>
 
+  <!-- APPROCCIO -->
   <div class="block">
     <h2>Il mio approccio</h2>
     <p>
-      Integro Psicoterapia della Gestalt ed EMDR, con attenzione alla relazione e al ritmo della persona.
+      Integro Psicoterapia della Gestalt ed EMDR.
+      Il lavoro terapeutico si basa sulla relazione, sull’ascolto e sul rispetto dei tempi individuali.
     </p>
   </div>
 
+  <!-- STUDIO -->
   <div class="block">
-    <h2>Studio</h2>
+    <h2>Lo studio</h2>
     <p>
-      Uno spazio accogliente e riservato nel centro di Trieste e online.
+      Ricevo in uno spazio riservato e accogliente nel centro di Trieste e online.
     </p>
   </div>
 
+  <!-- CTA FORTE -->
   <div class="block">
-    <h2>Contatto</h2>
+    <h2>Iniziamo</h2>
 
-    <p style="text-align:center;">
-      Se senti che è il momento, puoi scrivermi.
-    </p>
+    <div class="cta-box">
+      <a class="button" href="https://wa.me/393792524647">
+        Contattami su WhatsApp
+      </a>
 
-    <div class="cta">
-      <a class="button" href="https://wa.me/393792524647">WhatsApp</a>
-      <a class="button secondary" href="chisono.html">Chi sono</a>
-      <a class="button secondary" href="contatti.html">Contatti</a>
+      <a class="button secondary" href="chisono.html">
+        Chi sono
+      </a>
+
+      <a class="button secondary" href="contatti.html">
+        Contatti
+      </a>
+    </div>
+
+    <div class="final-note">
+      Il primo passo può essere semplice. Anche solo un messaggio.
     </div>
 
   </div>
